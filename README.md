@@ -1,13 +1,13 @@
 # A hierarchical study of American newspaper quotes and speaker characteristics.
 
-## Abstract: A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?
+## Abstract
 
 American newspapers cover all kinds of topics from politics to sports, business, environment, etc... At the highest level, one could ask which topics people are mostly interviewed about. One way to answer this question is by trying to infer the theme each Quotebank citation is treating in an unsupervised manner and draw a distribution over some labels/classes representing these themes. Once all citations are classified with a certain confidence probability, a lower-level question could be: for each class, is it possible to relate the quotes’ frequency with some real world event? For instance, could an increase of citations about economics forecast some variation in the American stock market? 
 In addition, using these classified quotes combined with additional data on the authors characteristics, we would like to compare the features of the authors of a particular citation class and try to find recurrent attributes or relevant features.
 
 <hr>
 
-## Research Questions: A list of research questions you would like to address during the project.
+## Research Questions
 
 What are interviewed people mostly talking about in newspapers?
 Are there subjects for which there are less quotes? Why?
@@ -44,5 +44,5 @@ We have planned the following internal Milestone timeline:
 17. December : Finalize the analysis, draw conclusions, redaction → Milestone 3
 
 <hr>
-## Questions for TAs (optional): Add here any questions you have for us related to the proposed project.
+## Questions for TAs (optional)
 What should we do in terms of representation of the data? Should we include all the genders and nationalities?
