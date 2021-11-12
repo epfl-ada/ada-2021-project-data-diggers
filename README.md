@@ -44,5 +44,6 @@ We have planned the following internal Milestone timeline:
 17. December : Finalize the analysis, draw conclusions, redaction → Milestone 3
 
 <hr>
-## Questions for TAs (optional)
+
+## Questions for TAs
 What should we do in terms of representation of the data? Should we include all the genders and nationalities?
