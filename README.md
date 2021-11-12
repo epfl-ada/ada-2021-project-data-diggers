@@ -1,4 +1,4 @@
-# Hierarchical study on American newspapers quotes and speakers’ features.
+# A hierarchical study of American newspaper quotes and speaker characteristics.
 
 ## Abstract: A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?
 
@@ -27,6 +27,7 @@ bz2
 Dask
 Json
 <hr>
+
 ## Methods
 In order to handle Quotebank in its size, we make use of Dask which is an open library built to operate on large datasets while keeping a low memory footprint by performing lazy computation. This means that it does not compute tasks directly but saves the set of input and executes functions only on demand through the function .compute(). With the latter call, Dask executes the calculation cleverly while minimizing the amount of data stored in memory and parallelizing tasks as much as possible.
 We will use BERTopic to perform the classification of the quotes which will result in probability distributions over the theme classes. Subsequently, the quotes with highest label confidence level will be selected and the others removed ending up with a filtered dataset. 
