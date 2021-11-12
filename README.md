@@ -49,4 +49,4 @@ The first major task will be to classify the quotes according to their theme usi
 
 ## Questions for TAs (optional): Add here any questions you have for us related to the proposed project.
 
-Multi-gender?
+What should we do in terms of representation of the data? Should we include all the genders and nationalities?
