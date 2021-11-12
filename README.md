@@ -40,13 +40,14 @@ Another axis of study consists in performing a regression analysis on the speake
 ## Organization
 We have planned the following internal Milestone timeline:
 
-3. December: Quotes classified + dataset filtered + metadata ready + real-life data processed
+- 3. December: Quotes classified + dataset filtered + metadata ready + real-life data processed
 
-10. December: Analysis, quotes vs real life, authors attributes regression
+- 10. December: Analysis, quotes vs real life, authors attributes regression
 
-17. December : Finalize the analysis, draw conclusions, redaction → Milestone 3
+- 17. December : Finalize the analysis, draw conclusions, redaction → Milestone 3
 
 <hr>
 
 ## Questions for TAs
 What should we do in terms of representation of the data? Should we include all the genders and nationalities?
+
