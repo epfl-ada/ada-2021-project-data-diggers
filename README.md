@@ -62,5 +62,6 @@ The structure of our code can be found in the image [below](#repo-struct).
 In this study, we had the chance to work on a brand new dataset freshly coming out of the DLAB at EPFL containing quotes from many English-speaking newspapers. The massive amount of available data led us to the choice of focusing our study on the New York Times only. We were able to make some statistics about the dataset augmented with some wikidata on the authors of the quotes. One of the challenges was to cluster the quotes into topics in an unsupervised manner using BERTopic library and training a model able to label the quotes with precise topics. Additionally, we encountered several struggles: 
 - Comparing a massive and economically inertial index such as the Dow Jones, which is more likely to influence the newspapers instead of the opposite
 - handling real-world data that doesn’t fit in memory
-- PCA handling 
+- PCA and how to handle large number of columns
+- Regression
 
