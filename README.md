@@ -39,13 +39,16 @@ Another axis of study consists in performing a regression analysis on the speake
 
 ## Organization
 
-| ----------- | ----------- | ----------- | ----------- |
-| Manon Boissat | Téo Goddet | Sébastien Jean-Favre | Michaël Tasev |
-| Task 1 (50%) | Task 2 (80%) | Task 1 (50%) | Task 2 (20%) |
-| Task 1 (50%) | Task 2 (80%) | Task 1 (50%) | Task 2 (20%) |
-| Task 1 (50%) | Task 2 (80%) | Task 1 (50%) | Task 2 (20%) |
-| Task 1 (50%) | Task 2 (80%) | Task 1 (50%) | Task 2 (20%) |
-| Task 1 (50%) | Task 2 (80%) | Task 1 (50%) | Task 2 (20%) |
+| Manon Boissat | Téo Goddet | Sébastien Jeanfavre | Michaël Tasev |
+| ------------------- | ------------------- | ------------------- | ------------------- |
+| Data cleaning | Data extraction | BERTopic training | Dow Jones handling |
+| Features and topics analysis(50%) | Full dataset handling | Topic analysis (50%) | Economic analysis|
+| PCA | Data story (50%) | Data story (50%) | README |
+
+Téo: extract data, handle full dataset, website
+Manon: data cleaning, first analysis on features and topics, PCA
+Michael: Readme, eco analysis, dow jones data
+Séb: BERTopic training, topic analysis, website
 
 We have planned the following internal Milestone timeline:
 3. December: Quotes classified + dataset filtered + metadata ready + real-life data processed
