@@ -1,5 +1,7 @@
 # A hierarchical study of American newspaper quotes and speaker characteristics.
 
+Here is the [data story](https://manonboissat.github.io/Data-diggers/) related to tihs repository.
+
 ## Abstract
 
 American newspapers cover all kinds of topics from politics to sports, business, environment, etc... At the highest level, one could ask which topics people are mostly interviewed about. One way to answer this question is by trying to infer the theme each Quotebank citation is treating in an unsupervised manner and draw a distribution over some labels/classes representing these themes. Once all citations are classified with a certain confidence probability, a lower-level question could be: for each class, is it possible to relate the quotes’ frequency with some real world event? For instance, could an increase of citations about economics forecast some variation in the American stock market? 
