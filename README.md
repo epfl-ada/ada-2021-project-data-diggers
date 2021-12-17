@@ -45,5 +45,5 @@ We have planned the following internal Milestone timeline:
 
 <hr>
 
-## Questions for TAs
-What should we do in terms of representation of the data? Should we include all the genders and nationalities?
+## Repo structure
+![Diagram of our different notebooks and datasest](ADA project structure.pdf)
