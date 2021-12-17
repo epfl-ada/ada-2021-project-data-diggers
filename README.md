@@ -29,21 +29,33 @@ Json
 <hr>
 
 ## Methods
-In order to handle Quotebank in its size, we make use of Dask which is an open library built to operate on large datasets while keeping a low memory footprint by performing lazy computation. This means that it does not compute tasks directly but saves the set of input and executes functions only on demand through the function .compute(). With the latter call, Dask executes the calculation cleverly while minimizing the amount of data stored in memory and parallelizing tasks as much as possible.
-We will use BERTopic to perform the classification of the quotes which will result in probability distributions over the theme classes. Subsequently, the quotes with highest label confidence level will be selected and the others removed ending up with a filtered dataset. 
-We will then be able to separate the data according to their label and process them separately. 
+In order to handle Quotebank in its size, we make use of Dask which is an open library built to operate on large datasets while keeping a low memory footprint by performing lazy computation. This means that it does not compute tasks directly but saves the set of input and executes functions only on demand through the function .compute(). With the latter call, Dask executes the calculation cleverly while minimizing the amount of data stored in memory and parallelizing tasks as much as possible. Since the dataset is too large, we sample 1% of the whole set in order to be able to work with it.
+
+We choose to pick only New York Times quotes because it represents well the American newspapers, and is a reasonable sample of our data. We use BERTopic to perform the classification of the quotes which results in probability distributions over the theme classes. Subsequently, the quotes with highest label confidence level are selected and the others removed ending up with a filtered dataset. 
+We are then be able to separate the data according to their label and process them separately. 
+
 For each of the new dataset of interest, we will report the frequency of citations and compare this frequency with real world event’s timeline, as for the already mentioned example with the Dow Jones index.
+
 Another axis of study consists in performing a regression analysis on the speakers’ features. We will first need to enrich quotebank with metadata on the authors of the quotes. After having stored these additional data in a dataframe, the idea is to add a column containing a binary variable representing whether or not the quote is labeled to a certain class. Performing a logistic regression will allow us to determine the most relevant features that make a speaker more or less likely to be quoted in a newspaper for a particular subject.
 
 <hr>
 
 ## Organization
+
+| Manon Boissat | Téo Goddet | Sébastien Jeanfavre | Michaël Tasev |
+| ------------------- | ------------------- | ------------------- | ------------------- |
+| Data cleaning | Data extraction | BERTopic training | Dow Jones handling |
+| Features and topics analysis(50%) | Full dataset handling | Topic analysis (50%) | Economic analysis|
+| PCA | Data story (50%) | Data story (50%) | README |
+
+
+
 We have planned the following internal Milestone timeline:
-3. December: Quotes classified + dataset filtered + metadata ready + real-life data processed
-10. December: Analysis, quotes vs real life, authors attributes regression
-17. December : Finalize the analysis, draw conclusions, redaction → Milestone 3
+3. December: boarf
+10. December: should we at least meet once ?
+15-17. December : Quotes classified + dataset filtered + metadata ready + real-life data processed + analysis, quotes vs real life, authors attributes regression + finalize the analysis, draw conclusions, redaction → Milestone 3
 
 <hr>
 
-## Questions for TAs
-What should we do in terms of representation of the data? Should we include all the genders and nationalities?
+## Repo structure
+![Diagram of our different notebooks and datasest](ADA_project_structure.png)
