@@ -20,11 +20,11 @@ What common characteristics do the authors of citations treating a certain topic
 For the purpose of trying to find similarities between speakers, we will need more information about them, that’s why we will take advantage of the made available metadata about the speakers of the Quotebank dataset. 
 In addition, with the aim of comparing the quotes classified as treating economics, we will make use of the Dow Jones Industrial Average. This will be done using a csv file containing indices for each day since 2013. 
 Additional libraries used:
-Pandas
-Numpy
-BERTopic
-bz2
-Dask
+Pandas,
+Numpy,
+BERTopic,
+bz2,
+Dask,
 Json
 <hr>
 
@@ -37,6 +37,8 @@ We are then be able to separate the data according to their label and process th
 For all topics linked with economics, we report the frequency of citations and compare this frequency with real world event’s timeline of th Dow Jones index.
 
 Another axis of study consists in performing some analysis on the speakers’ features. We first enrich quotebank with metadata on the speakers. We then try to infer what features makes a speaker more likely to be interviewed and cited in the New York Times.
+
+The structure of our code can be found in the image [below](#repo-struct).
 
 <hr>
 
@@ -52,5 +54,5 @@ Another axis of study consists in performing some analysis on the speakers’ fe
 
 <hr>
 
-## Repo structure
+## Repo structure {#repo-struct}
 ![Diagram of our different notebooks and datasest](ADA_project_structure.png)
