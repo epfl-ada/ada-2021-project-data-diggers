@@ -46,14 +46,9 @@ Another axis of study consists in performing a regression analysis on the speake
 | ------------------- | ------------------- | ------------------- | ------------------- |
 | Data cleaning | Data extraction | BERTopic training | Dow Jones handling |
 | Features and topics analysis(50%) | Full dataset handling | Topic analysis (50%) | Economic analysis|
-| PCA | Data story (50%) | Data story (50%) | README |
+| PCA | Data story (50%) | Data story (20%) | README |
+| Data story (30%) | 
 
-
-
-We have planned the following internal Milestone timeline:
-3. December: boarf
-10. December: should we at least meet once ?
-15-17. December : Quotes classified + dataset filtered + metadata ready + real-life data processed + analysis, quotes vs real life, authors attributes regression + finalize the analysis, draw conclusions, redaction → Milestone 3
 
 <hr>
 
