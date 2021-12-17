@@ -29,14 +29,14 @@ Json
 <hr>
 
 ## Methods
-In order to handle Quotebank in its size, we make use of Dask which is an open library built to operate on large datasets while keeping a low memory footprint by performing lazy computation. This means that it does not compute tasks directly but saves the set of input and executes functions only on demand through the function .compute(). With the latter call, Dask executes the calculation cleverly while minimizing the amount of data stored in memory and parallelizing tasks as much as possible. Since the dataset is too large, we sample 1% of the whole set in order to be able to work with it.
+In order to handle Quotebank in its size, we first tried to use Dask which is an open library built to operate on large datasets while keeping a low memory footprint by performing lazy computation. This means that it does not compute tasks directly but saves the set of input and executes functions only on demand through the function .compute(). With the latter call, Dask executes the calculation cleverly while minimizing the amount of data stored in memory and parallelizing tasks as much as possible. However, with the available computational power, we were not able to fit the model on a too large dataset. Therefore, we simply extracted the data line by line as one can find in the notebook "extract_nyt.ipynb".
 
-We choose to pick only New York Times quotes because it represents well the American newspapers, and is a reasonable sample of our data. We use BERTopic to perform the classification of the quotes which results in probability distributions over the theme classes. Subsequently, the quotes with highest label confidence level are selected and the others removed ending up with a filtered dataset. 
-We are then be able to separate the data according to their label and process them separately. 
+We choose to pick only New York Times quotes because it represents well the American newspapers, and is a reasonable sample of our data. We use BERTopic to perform the classification resulting in the quotes labeled with one single topic. Indeed, we were not able to compute confidence probabilities for the labeling because of the limited computational power.
+We are then be able to separate the data according to their label and process the economics quotes separately.
 
-For each of the new dataset of interest, we will report the frequency of citations and compare this frequency with real world event’s timeline, as for the already mentioned example with the Dow Jones index.
+For all topics linked with economics, we report the frequency of citations and compare this frequency with real world event’s timeline of th Dow Jones index.
 
-Another axis of study consists in performing a regression analysis on the speakers’ features. We will first need to enrich quotebank with metadata on the authors of the quotes. After having stored these additional data in a dataframe, the idea is to add a column containing a binary variable representing whether or not the quote is labeled to a certain class. Performing a logistic regression will allow us to determine the most relevant features that make a speaker more or less likely to be quoted in a newspaper for a particular subject.
+Another axis of study consists in performing some analysis on the speakers’ features. We first enrich quotebank with metadata on the speakers. We then try to infer what features makes a speaker more likely to be interviewed and cited in the New York Times.
 
 <hr>
 
