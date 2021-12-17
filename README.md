@@ -38,6 +38,15 @@ Another axis of study consists in performing a regression analysis on the speake
 <hr>
 
 ## Organization
+
+| ----------- | ----------- | ----------- | ----------- |
+| Manon Boissat | Téo Goddet | Sébastien Jean-Favre | Michaël Tasev |
+| Task 1 (50%) | Task 2 (80%) | Task 1 (50%) | Task 2 (20%) |
+| Task 1 (50%) | Task 2 (80%) | Task 1 (50%) | Task 2 (20%) |
+| Task 1 (50%) | Task 2 (80%) | Task 1 (50%) | Task 2 (20%) |
+| Task 1 (50%) | Task 2 (80%) | Task 1 (50%) | Task 2 (20%) |
+| Task 1 (50%) | Task 2 (80%) | Task 1 (50%) | Task 2 (20%) |
+
 We have planned the following internal Milestone timeline:
 3. December: Quotes classified + dataset filtered + metadata ready + real-life data processed
 10. December: Analysis, quotes vs real life, authors attributes regression
@@ -46,4 +55,4 @@ We have planned the following internal Milestone timeline:
 <hr>
 
 ## Repo structure
-![Diagram of our different notebooks and datasest](ADA project structure.pdf)
+![Diagram of our different notebooks and datasest](ADA_project_structure.png)
