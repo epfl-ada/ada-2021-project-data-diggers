@@ -1,6 +1,6 @@
 # A hierarchical study of American newspaper quotes and speaker characteristics.
 
-Here is the [data story](https://manonboissat.github.io/Data-diggers/) related to tihs repository.
+This repository is related to EPFL ADA project of 2021. Here is the [data story](https://manonboissat.github.io/Data-diggers/) related to the repository.
 
 ## Abstract
 
